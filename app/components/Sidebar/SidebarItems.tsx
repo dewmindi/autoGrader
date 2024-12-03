@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react'
+import { Answers } from '../Dashboard/Answers';
+import { Dashboard } from '../Dashboard/Dashboard';
 
 export const SidebarItems = () => {
      const [selectedRoute, setSelectedRoute] = useState("Dashboard");
@@ -9,6 +11,7 @@ export const SidebarItems = () => {
           {title: "Evaluate"},
           {title: "Grades"}
      ];
+
   return (
     <div className='space-y-10'>
         {routes.map((route)=>(

@@ -14,7 +14,7 @@ export const Imgt = () => {
 
 const Card = ({title}:{title:String}) => {
     return <div className='p-4 bg-stone-600 col-span-2 rounded-md h-40'>
-        <Link href={"app/ViewSubmission/"}>
+        <Link href={"/dashboard/answers"}>
             <div className='border-t mb-4 mt-20 pb-4 border-stone-950 h-30'>
                 <span>{title}</span>
             </div>
