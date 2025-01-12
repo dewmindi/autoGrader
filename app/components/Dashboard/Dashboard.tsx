@@ -8,7 +8,7 @@ interface DashboardProps {
 
 export const Dashboard: React.FC<DashboardProps> = ({ children }) => {
   return (
-    <div className="bg-white rounded-lg pb-4 mt-2 shadow h-[200vh]">
+    <div className="bg-white rounded-lg pb-4 mt-2 shadow h-[200vh] sticky top-0">
       <Navbar />
       {children ? <div>{children}</div> : <Subjects />}
     </div>
